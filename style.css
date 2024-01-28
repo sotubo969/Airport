@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 70px;
+  font-size: 38px;
+  background-color: #CADCFC;
+  color: #00246B;
+  font-weight: bolder;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.header img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15vw;
+  height: 15vw;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+.first {
+  padding: 12px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 799px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* Optional: Define the gap between the grid items */
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    display: block;
+    position: initial;
+    max-width: 100vw;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+  .twothree img{
+    max-width: 30%;
+  }
+
+  .nav li a:hover:not(.active) {
+    background-color: #00246B;
+    color: white;
+  }
+
+  .nav li .active {
+    color: white;
+  }
+}
+
+/* Add the closing curly brace here */
+.matrix-container {
+  text-align: center;
+}
